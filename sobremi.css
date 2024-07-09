@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Etiquetas estandarizadas */
+body{
+    
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        position: relative;
+        background-color: #191826;
+}
+h1{
+    font-size: 3rem;
+    color: #CCCCCC;
+
+}
+p{
+    color: #CCCCCC;
+}
+span{
+    color: #CCCCCC;
+}
+
+
+/*Creación del Menu */
+nav{
+    width: 100%;
+    padding: 10px 12px 0;
+    background-color: #B8014D;
+    border: 3px solid #CCCCCC;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #CCCCCC;
+}
+/* Final del Menu */
+/* Seccion banner */
+.banner{
+    padding:6rem ;
+    width: 100%;
+    background-image: url(img/FondoBenefioOjoARRIBA.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.Cj-txt-banner-l{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.Cj-txt-banner-R{
+    width: 50%;
+    padding: 3rem;
+    background: rgba( 117, 69, 241, 0.6 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8px );
+-webkit-backdrop-filter: blur( 8px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+.Cj-txt-banner-R h1{
+    font-size: 2rem;
+}
+.Cj-txt-banner-R p{
+    font-size: 1rem;
+}
+.Cj-preparation{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.Cj-Skills{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.li-skills{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.li-skills span{
+    margin-left: 1rem;
+    color: #CCCCCC;
+    font-size: 1rem;
+}
+
+.Cj-txt-banner-l{
+    width: 20%;
+    height: 28rem;
+    background: rgb(184,0,76);
+background: linear-gradient(90deg, rgba(184,0,76,0.700717787114846) 6%, rgba(117,68,240,1) 22%, rgba(160,140,254,1) 50%, rgba(117,68,240,1) 77%, rgba(184,0,76,0.7) 97%);
+backdrop-filter: blur( 8px );
+-webkit-backdrop-filter: blur( 8px );
+border-radius: 1rem;
+border: 0.3rem solid rgba( 255, 255, 255, 0.18 );
+}
+.img-aboutme {
+    position: absolute;
+    top: 12rem;
+    left: 10rem;
+}
+.img-aboutme img{
+    width: 10rem;
+}
+.Cj{
+    display: flex;
+}
+
+.iconos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.iconos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconos img{
+    width: 3rem;
+    margin: 1rem;
+}
+/* btn */
+.Btn-banner {
+    width: fit-content;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #FF0072;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #FF0072;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+  
+  .Btn-banner:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #FF0072;
+    border-radius: 0.6rem;
+    z-index: -1;
+  }
+  
+  .Btn-banner:hover, .Btn-banner:focus {
+    color: white;
+  }
+  
+  .Btn-banner:hover:before, .Btn-banner:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .Btn-banner:active {
+    transform: scale(0.9);
+  }
+/* final btn */
+/* Final de la seccion banner */
+/* Footer */
+footer .FooterFondo{
+    width: 50rem;
+    height: 50rem;
+    background-image: url(img/FondoFooter.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+     display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;  
+    position: relative;
+}
+footer .FooterFondo img{
+    width: 20%;
+    margin-bottom: 3rem;
+
+
+}
+footer .FooterFondo  .Cj-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 5rem;
+}
+footer .FooterFondo  .Cj-txt h1{
+    font-size: 1rem;
+}
+footer .FooterFondo  .Cj-txt  p{
+    font-size: 1rem;
+}
+footer .FooterFondo  .img-redF{
+    position: absolute;
+    right: 9rem;
+    bottom: 0rem;
+}
+/* Final Footer */

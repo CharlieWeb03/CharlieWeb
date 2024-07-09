@@ -1,0 +1,513 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Etiquetas estandarizadas */
+body{
+    
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        position: relative;
+        background-color: #191826;
+}
+h1{
+    font-size: 3rem;
+    color: #CCCCCC;
+
+}
+
+
+/*Creación del Menu */
+nav{
+    width: 100%;
+    padding: 10px 12px 0;
+    background-color: #B8014D;
+    border: 3px solid #CCCCCC;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #CCCCCC;
+}
+/* Final del Menu */
+/* Banner */
+.banner{
+    width: 100%;
+    padding: 15rem;
+    background-image: url(img/ImgFondoPrueba.png);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner article{
+    width: 50%;
+    height: 28rem;
+    padding: 3rem 4rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    
+}
+.banner .campoTexto{
+    width: 50%;
+    height: 28rem;
+    background: rgba( 255, 255, 255, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+border: 2px solid rgba(255, 255, 255);
+}
+.banner .campoImg img{
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.banner .campoTexto h1{
+    color: #CCCCCC;
+    font-size: 3rem;
+}
+.banner .campoTexto p{
+    color: #CCCCCC;
+    font-size: 1rem;
+}
+
+/* btn banner */
+/* .Btn-banner{
+    width:fit-content;
+    padding: 1rem ;
+    text-decoration: none;
+    color: #CCCCCC;
+    background-color: #B8014D;
+} */
+.Btn-banner {
+    width: fit-content;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #FF0072;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #FF0072;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+  
+  .Btn-banner:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #FF0072;
+    border-radius: 0.6rem;
+    z-index: -1;
+  }
+  
+  .Btn-banner:hover, .Btn-banner:focus {
+    color: white;
+  }
+  
+  .Btn-banner:hover:before, .Btn-banner:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .Btn-banner:active {
+    transform: scale(0.9);
+  }
+/* Final del Banner */
+/* Seccion Beneficios */
+.Se-Bn{
+    padding: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/FondoBenefioOjo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Se-Bn .campoBeneficioTxt{
+    width: 100%;
+    height: 28rem;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(117,69,241,0.55) 0%, rgba(185,1,76,0.55) 57%, rgba(117,69,241,0.55) 100%);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 0.5px );
+-webkit-backdrop-filter: blur( 7.5px );
+border-radius: 10px;
+border: 3px solid #CCCCCC;
+}
+.Se-Bn .campoBeneficioTxt .itemBnF{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0  1rem;
+    
+}
+.Se-Bn h1{
+    margin-bottom: 4rem;
+}
+.Se-Bn .campoBeneficioTxt .itemBnF h2{
+    color: #CCCCCC;
+}
+/* Fin de la Seccion Beneficios */
+/* Seccion Projects */
+.Se-Pj{
+    padding: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items:center ;
+}
+.Se-Pj h1{
+margin-bottom: 3rem;
+}
+.Se-Pj .itemsPj{
+    padding: 8rem;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(img/fondoProjects.jpg);
+    background-size: cover;
+    border-radius: 10px;
+
+}
+.card {
+    width: 290px;
+    height: 354px;
+    padding: .8em;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    background: #7545F1;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 25px;
+}
+
+.card-img1 {
+    background-image: url(img/beats.png);
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+.card-img2 {
+    background-image: url(img/congreso.png);
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+.card-img3 {
+    background-image: url(img/Catursantos.png);
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+.card-img4 {
+    background-image: url(img/Piccolo.png);
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+.c
+.c
+.c
+.card-info {
+    padding-top: 10%;
+}
+svg {
+    width: 20px;
+    height: 20px;
+}
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+
+/*Text*/
+.text-title {
+    font-weight: 900;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.text-body {
+    font-size: .9rem;
+    padding-bottom: 10px;
+}
+
+/*Button*/
+.card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+/*Hover*/
+.card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+    border: 1px solid #B8014D;
+    background-color: #B8014D;
+}
+
+/* Fin de la seccopm Projects */
+/* Seccion Preguntas Frecuentes */
+.Se-Pr{
+    padding: 15rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+section .Fn-Pr{
+    width: 45rem;
+    padding:6rem;
+    background-color: #CCCCCC;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 3rem;
+}
+summary{
+    font-size: 1.5rem;
+    color: #CCCCCC;
+    padding: 1rem;
+    background-color: #B8014D;
+    border-radius: 1rem;
+    list-style: none;
+    cursor: pointer;
+}
+details p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #7545F1;
+    color: #CCCCCC;
+    border-radius: 1rem;
+}
+/* Fin de la seccion Pregunas frecuentes*/
+/* Seccion de Formulario */
+
+.Se-Forms{
+    padding: 15rem;
+    display: flex;
+    justify-content: center;
+}
+.form-container {
+    width: 900px;
+    background: linear-gradient(#7545F1, #7545F1) padding-box,
+                linear-gradient(145deg, transparent 35%,#B8014D, #7545F1) border-box;
+    border: 0.5rem solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.form-container button:active {
+    scale: 0.95;
+}
+
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} 
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #CCCCCC;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.form-container .form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+    opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #717171;
+    font-weight: 600;
+    width: 40%;
+    background: #313131;
+    border: 1px solid #414141;
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/* Final seccion Formulario */
+/* Footer */
+footer .FooterFondo{
+    width: 50rem;
+    height: 50rem;
+    background-image: url(img/FondoFooter.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+     display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;  
+    position: relative;
+}
+footer .FooterFondo img{
+    width: 20%;
+    margin-bottom: 3rem;
+
+
+}
+footer .FooterFondo  .Cj-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 5rem;
+}
+footer .FooterFondo  .Cj-txt h1{
+    font-size: 1rem;
+}
+footer .FooterFondo  .Cj-txt  p{
+    font-size: 1rem;
+}
+footer .FooterFondo  .img-redF{
+    position: absolute;
+    right: 9rem;
+    bottom: 0rem;
+}
+/* Final Footer */
